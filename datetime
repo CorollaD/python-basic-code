@@ -1,0 +1,15 @@
+from datetime import datetime, date,time
+# 自定义日期时间为2019-10-10 8:10
+date_time = datetime(2019, 10, 10, 8, 10)
+# 打印自定义的日期时间对象 
+print(date_time)
+# 使用time模块的sleep函数停顿2秒
+#time.sleep(2)
+# 自定义日期2019-11-11
+date_ = date(2019, 11, 11)
+# 打印自定义的日期对象 
+print(date_)
+# 自定义时间11:11
+time_ = time(11,11)
+# 打印自定义的时间对象
+print(time_)
