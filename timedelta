@@ -1,0 +1,10 @@
+from datetime import datetime, timedelta
+# 定义now_变量接收当前日期时间
+now_= datetime.now()
+print(now_)
+# 计算距当前日期时间3天36小时12分钟之前的日期时间
+now_before = now_ - timedelta( days=3, hours = 36, minutes = 12)
+# 计算10天之后的日期时间
+now_after= now_ + timedelta(days = 10)
+print(now_before)
+print(now_after)
