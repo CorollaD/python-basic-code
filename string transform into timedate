@@ -1,0 +1,12 @@
+from datetime import datetime,date
+# 定义一个str_字符串为2019-09-10 8:10:56
+str_=('2019-09-10 8:10:56')
+# 将str_转换为日期函数2019-09-10 8:10:56
+str_date=datetime.strptime(str_, '%Y-%m-%d %H:%M:%S')
+print(str_date)
+# 定义now_变量接收当前的日期时间
+now_ = datetime.now()
+print(now_)
+# 将当前日期时间格式化为——四位的年份/月/日 时:分:秒
+date_str = datetime.strftime(now_, '%Y-%m-%d %H:%M:%S')
+print(date_str)
