@@ -1,0 +1,40 @@
+
+
+def read_file():
+    """ 读取文件"""
+    file_name = 'test.txt'
+    # 使用绝对路径
+    file_path = 'C:\\Users\\卡罗尔\\Desktop\\py_learn\\chapter06\\untitled1\\test.txt'
+    file_path2 = 'C:/Users/卡罗尔/Desktop/py_learn/chapter06/untitled1/test.txt'
+    # 使用普通的方式打开文件
+    with open(file_path2, encoding = 'utf-8') as f:
+    # 读取文件所有内容
+    #rest = f.read()
+
+    # 读取指定的几个内容
+    #rest = f.read(8)
+    #print(rest)
+    #print(f.read(8))
+
+    # 随机读取
+    #f.seek(20)
+    #print(f.read(5))
+    #按行读取
+        rest = f.readline(8)
+        print(rest)
+        print(f.readline(8))
+    #print(f.readline())
+
+    # 读取所有行
+        rest = f.readlines(2)
+        print(rest)
+        print(len(rest))
+        for i in rest:
+            print(i)
+
+        # 关闭文件
+        #f.close()
+
+
+if __name__ == '__main__':
+    read_file()
